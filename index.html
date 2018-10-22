@@ -28,12 +28,35 @@
             background-color: black;
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
+        
+        #colorbox {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+            -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        
+        /* Standard syntax */
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
     </style>
 </head>
 <body> 
     <div id="redbox">
         <img src="/Avvakum.jpg" width="460" height="345">
     </div>
+    <div id="colorredbox"></div>
 <script>
     var intervalId = null;
 
