@@ -22,7 +22,7 @@
         #redbox {
             position: absolute;
             left: 100px;
-            top: 100px;
+            top: 50px;
             width: 200px;
             height: 200px;
             background-color: black;
@@ -32,7 +32,7 @@
         #redbox1 {
             position: absolute;
             left: 100px;
-            top: 400px;
+            top: 450px;
             width: 200px;
             height: 200px;
             background-color: black;
@@ -57,11 +57,11 @@
         
         /* Standard syntax */
         @keyframes example {
-            0%   {background-color:red; left:100px; top:600px;}
-            25%  {background: url("/brick70.png"); left:300px; top:600px;}
-            50%  {background-color:blue; left:300px; top:800px;}
-            75%  {background-color:green; left:100px; top:800px;}
-            100% {background-color:red; left:100px; top:600px;}
+            0%   {background: url("/Avvakum.jpg"); left:100px; top:300px;}
+            25%  {background: url("/brick70.png"); left:300px; top:300px;}
+            50%  {background-color:gray; left:300px; top:500px;}
+            75%  {background-color:black; left:100px; top:500px;}
+            100% {background: url("/Avvakum.jpg"); left:100px; top:300px;}
         }
     </style>
 </head>
@@ -78,7 +78,7 @@
     var intervalId = null;
 
     document.getElementById('redbox').addEventListener('click', startBox, false);
-    document.getElementById('redbox1').addEventListener('click', startBox1, false);
+    document.getElementById('redbox1').addEventListener('doubleclick', startBox1, false);
 
     function startBox() {
         if (intervalId == null) {
