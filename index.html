@@ -32,7 +32,7 @@
         #redbox1 {
             position: absolute;
             left: 100px;
-            top: 450px;
+            top: 700px;
             width: 200px;
             height: 200px;
             background-color: black;
@@ -43,8 +43,8 @@
             position: absolute;
             left: 100px;
             top: 600px;
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             background-color: red;
             -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
             -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
@@ -57,11 +57,11 @@
         
         /* Standard syntax */
         @keyframes example {
-            0%   {background: url("/Avvakum.jpg"); left:100px; top:300px;}
+            0%   {background-color:black; left:100px; top:300px;}
             25%  {background: url("/brick70.png"); left:300px; top:300px;}
             50%  {background-color:gray; left:300px; top:500px;}
-            75%  {background-color:black; left:100px; top:500px;}
-            100% {background: url("/Avvakum.jpg"); left:100px; top:300px;}
+            75%  {background-color:blue; left:100px; top:500px;}
+            100% {background-color:black; left:100px; top:300px;}
         }
     </style>
 </head>
@@ -78,7 +78,7 @@
     var intervalId = null;
 
     document.getElementById('redbox').addEventListener('click', startBox, false);
-    document.getElementById('redbox1').addEventListener('doubleclick', startBox1, false);
+    document.getElementById('redbox1').addEventListener('hover', startBox1, false);
 
     function startBox() {
         if (intervalId == null) {
