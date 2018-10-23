@@ -32,7 +32,7 @@
         #redbox1 {
             position: absolute;
             left: 100px;
-            top: 600px;
+            top: 400px;
             width: 200px;
             height: 200px;
             background-color: black;
@@ -43,7 +43,7 @@
             width: 200px;
             height: 200px;
             background-color: red;
-            position: absolute;
+            position: relative;
             left: 100px;
             top: 1600px;
             -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
@@ -86,6 +86,7 @@
                     x += 5;
                     var left = x + "px";
                     document.getElementById("redbox").style.left = left;
+                    document.getElementById("redbox1").style.left = left;
                 }, 100);
         } else {
             clearInterval(intervalId);
